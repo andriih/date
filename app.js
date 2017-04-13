@@ -13,9 +13,10 @@ function getDaysInMonth(month, year) {
     }
     var d = getDaysInMonth(3, 2017);
 
-    for (var j=0;j<5;j++){
+    for (var j=0;j<1;j++){
         $('#tbl-body').append('<tr id="week"></tr>');
-        $('#week').append('<td id="1"></td><td id="2"></td><td id="3"></td><td id="4"></td><td      id="5"></td><td id="6"></td><td id="7"></td>');
+        $('#week').append('<td id="1"></td><td id="2"></td><td id="3"></td><td id="4"></td><td id="5"></td><td id="6"></td><td id="7"></td>');
+        
 
     }
 
@@ -26,7 +27,7 @@ function getDaysInMonth(month, year) {
         switch (d[i].getDay()){
 
             case 1:
-                $('#1').append(d[i]);
+                $('#1').append('<td>'+d[i]+'</td>');
                 break;
             case 2:
                 $('#2').append(d[i]);
@@ -48,7 +49,7 @@ function getDaysInMonth(month, year) {
                 break;
         }
 
-        console.log(d[i]);
+        //console.log(d[i]);
     }
     
 
